@@ -1,23 +1,13 @@
-# 1 way of good return 
-def divide1(a,b):
-    try:
-        return True, a/b
-    except ZeroDivisionError:
-        return False, None
+# good if
+if 4 is not 5:
+    print("4 is not 5")
+# bad if
+if not 4 is 5:
+    print("ot 4 is 5")
+# good check
+kjn = []
+if kjn:
+    print(kjn)
 
-print("divide1(1,5)" + str(divide1(1,5)))
-print("divide1(1,0)" + str(divide1(1,0)))
-
-# 2 way of good return 
-def divide2(a,b):
-    try:
-        return a/b
-    except ZeroDivisionError:
-        raise ValueError('invalid inputs') from e
-
-try:
-    divide2(2,1)
-except ValueError:
-    print("invalid input")
-else:
-    print("divide2(2,1)" + str(divide2(2,1)))
+print("jast use https://www.pylint.org/")
+print("explanation: https://www.youtube.com/watch?v=fFY5103p5-c")
